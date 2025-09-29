@@ -1,0 +1,7 @@
+# ROS 2 Build Files
+build/
+install/
+log/
+
+# VS Code settings
+.vscode/
