@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <node pkg="example_package" exec="turtle_timer" name= "timery">
+    <param name="counter" value="50"/>
+  </node>
+</launch>

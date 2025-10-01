@@ -33,6 +33,11 @@ target_link_libraries(turtle_timer PUBLIC rclcpp::rclcpp ${geometry_msgs_TARGETS
 add_executable(turtle_subpub src/turtle_subpub.cpp)
 target_link_libraries(turtle_subpub PUBLIC rclcpp::rclcpp ${turtlesim_TARGETS} ${geometry_msgs_TARGETS})
 
-install(TARGETS topic_publisher service_advertiser service_client turtle_timer turtle_subpub DESTINATION lib/${PROJECT_NAME})
+add_executable(turtle_speed src/turtle_speed.cpp)
+target_link_libraries(turtle_speed PUBLIC rclcpp::rclcpp ${std_msgs_TARGETS} ${geometry_msgs_TARGETS})
+
+install(TARGETS topic_publisher service_advertiser service_client turtle_timer turtle_subpub turtle_speed DESTINATION lib/${PROJECT_NAME})
+
+install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}/)
 
 ament_package()
