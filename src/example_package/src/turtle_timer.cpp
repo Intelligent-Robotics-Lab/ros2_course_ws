@@ -11,9 +11,11 @@ int main(int argc, char** argv)
 {
   rclcpp::init(argc, argv);
   node = rclcpp::Node::make_shared("turtle_timer");
-  node->declare_parameter<int>("counter", 0);
 
-  pub_twist = node->create_publisher<geometry_msgs::msg::Twist>("turtle1/cmd_vel", 1);
+  node->declare_parameter<int>("counter", 0);
+  node->declare_parameter<std::string>("turtle_name", "turtle");
+
+  pub_twist = node->create_publisher<geometry_msgs::msg::Twist>(node->get_parameter("turtle_name").as_string() + "/cmd_vel", 1);
   auto timer = node->create_wall_timer(std::chrono::milliseconds(500), timerCallback);
 
   rclcpp::spin(node);
@@ -25,6 +27,7 @@ void timerCallback()
 {
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "%ld", node->get_parameter("counter").as_int());
   node->set_parameter(rclcpp::Parameter("counter", node->get_parameter("counter").as_int() + 1));
+  
   geometry_msgs::msg::Twist twist_msg;
   twist_msg.linear.x = 1.0;
   twist_msg.angular.z = 1.0;

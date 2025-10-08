@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <node pkg="turtlesim" exec="turtlesim_node" name="turtle_sim"/>
+  <executable cmd="ros2 service call /spawn turtlesim/srv/Spawn '{x: 5, y: 2, theta: 0.2}'" />
+  <node pkg="example_package" exec="turtle_timer" name="turtle1_timer">
+    <param name="turtle_name" value="turtle1"/>
+  </node>
+  <node pkg="example_package" exec="turtle_timer" name="turtle2_timer">
+    <param name="turtle_name" value="turtle2"/>
+  </node>
+  <node pkg="example_package" exec="turtle_distance" name="turtle_distance">
+    <param name="turtle1_name" value="turtle1"/>
+    <param name="turtle2_name" value="turtle2"/>
+  </node>
+</launch>

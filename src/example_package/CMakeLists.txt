@@ -36,10 +36,13 @@ target_link_libraries(turtle_subpub PUBLIC rclcpp::rclcpp ${turtlesim_TARGETS} $
 add_executable(turtle_speed src/turtle_speed.cpp)
 target_link_libraries(turtle_speed PUBLIC rclcpp::rclcpp ${std_msgs_TARGETS} ${geometry_msgs_TARGETS})
 
+add_executable(turtle_distance src/turtle_distance.cpp)
+target_link_libraries(turtle_distance PUBLIC rclcpp::rclcpp ${std_msgs_TARGETS} ${turtlesim_TARGETS})
+
 add_executable(namespaces src/namespaces.cpp)
 target_link_libraries(namespaces PUBLIC rclcpp::rclcpp ${std_msgs_TARGETS})
 
-install(TARGETS topic_publisher service_advertiser service_client turtle_timer turtle_subpub turtle_speed namespaces DESTINATION lib/${PROJECT_NAME})
+install(TARGETS topic_publisher service_advertiser service_client turtle_timer turtle_subpub turtle_speed turtle_distance namespaces DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}/)
 

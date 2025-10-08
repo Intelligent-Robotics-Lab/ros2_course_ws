@@ -4,4 +4,5 @@
   <node pkg="example_package" exec="turtle_timer" name= "timery">
     <param name="counter" value="50"/>
   </node>
+  <executable cmd="ros2 service call /spawn turtlesim/srv/Spawn '{x: 5, y: 2, theta: 0.2}'" />
 </launch>
