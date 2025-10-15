@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <arg name="use_sim_time" default="true" />
+
+  <!-- World file argument - can be overridden when launching -->
+  <arg name="world" default="$(find-pkg-share my_robot_description)/worlds/cool_world.world" />
+
+  <let name="pkg_share" value="$(find-pkg-share my_robot_description)"/>
+
+  <let name="xacro_file" value="$(var pkg_share)/urdf/camera_arm_robot.urdf.xacro"/>
+
+  <let name="robot_description" value="$(command 'xacro $(var xacro_file)')"/>
+
+  <node pkg="robot_state_publisher" exec="robot_state_publisher" output="screen">
+    <param name="robot_description" type="str" value="$(var robot_description)"/>
+    <param name="use_sim_time" value="$(var use_sim_time)" />
+  </node>
+
+  <executable cmd="gzserver --verbose $(var world) -s libgazebo_ros_init.so -s libgazebo_ros_factory.so" output="screen" />
+
+  <executable cmd="gzclient" output="screen" />
+
+  <node pkg="gazebo_ros" exec="spawn_entity.py" output="screen"
+          args="-topic robot_description -entity camera_arm_robot"
+          launch-prefix="bash -c 'sleep 5; $0 $@' ">
+        <param name="use_sim_time" value="$(var use_sim_time)" />
+  </node>
+
+
+  <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen">
+    <param name="use_sim_time" value="$(var use_sim_time)" />
+  </node>
+</launch>
