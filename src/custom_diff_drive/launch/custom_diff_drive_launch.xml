@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <!-- Simulation time parameter - set to true when using Gazebo -->
+  <arg name="use_sim_time" default="true" />
+  
+  <!-- World file argument - can be overridden when launching -->
+  <arg name="world" default="$(find-pkg-share custom_diff_drive)/worlds/cool_world.world" />
+  
+  <!-- Package and file paths -->
+  <let name="pkg_share" value="$(find-pkg-share custom_diff_drive)"/>
+  <let name="xacro_file" value="$(var pkg_share)/urdf/turtlebot3_burger.xacro"/>
+  <let name="robot_description" value="$(command 'xacro $(var xacro_file)')"/>
+  
+  <!-- Robot State Publisher -->
+  <!-- Publishes the robot's URDF and transforms between coordinate frames -->
+  <node pkg="robot_state_publisher" exec="robot_state_publisher" output="screen">
+    <param name="robot_description" type="str" value="$(var robot_description)"/>
+    <param name="use_sim_time" value="$(var use_sim_time)" />
+  </node>
+  
+  <!-- Gazebo Simulation Setup -->
+  <!-- Set the path where Gazebo looks for models -->
+  <set_env name="GAZEBO_MODEL_PATH" value="$(var pkg_share)" />
+  
+  <!-- Start Gazebo server (physics simulation) -->
+  <executable cmd="gzserver --verbose $(var world) -s libgazebo_ros_init.so -s libgazebo_ros_factory.so" output="screen" />
+  
+  <!-- Start Gazebo client (visualization GUI) -->
+  <executable cmd="gzclient" output="screen" />
+  
+  <!-- Spawn Robot in Gazebo -->
+  <!-- Waits 5 seconds for Gazebo to fully start before spawning the robot -->
+  <node pkg="gazebo_ros" exec="spawn_entity.py" output="screen"
+        args="-topic robot_description -entity turtle_bot"
+        launch-prefix="bash -c 'sleep 5; $0 $@' ">
+    <param name="use_sim_time" value="$(var use_sim_time)" />
+  </node>
+  
+  <!-- Educational Differential Drive Controller Node -->
+  <!-- This node demonstrates the kinematics calculations but does NOT control the robot -->
+  <!-- The actual robot control is handled by the diff_drive plugin in the URDF -->
+  <!-- Waits 6 seconds to ensure robot is spawned before starting -->
+  <node pkg="custom_diff_drive" exec="diff_drive_controller" name="diff_drive_controller" output="screen"
+        launch-prefix="gnome-terminal --title='Diff Drive Controller Output' --geometry=120x30 -- bash -c 'sleep 6; source /opt/ros/humble/setup.bash; source ~/ros2_course_ws_master/install/setup.bash; ros2 run custom_diff_drive diff_drive_controller --ros-args -p use_sim_time:=true -p wheel_separation:=0.160 -p wheel_radius:=0.033; exec bash'">
+  </node>
+  
+  <!-- RViz2 Visualization -->
+  <!-- Provides 3D visualization of the robot, sensor data, and transforms -->
+  <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen">
+    <param name="use_sim_time" value="$(var use_sim_time)" />
+  </node>
+  
+  <!-- Teleop Keyboard Control -->
+  <!-- Opens in a separate terminal window to capture keyboard input -->
+  <!-- Use arrow keys or WASD to control the robot -->
+  <!-- This publishes Twist messages to /cmd_vel topic -->
+  <node pkg="teleop_twist_keyboard" exec="teleop_twist_keyboard" name="teleop_twist_keyboard" output="screen" 
+        launch-prefix="gnome-terminal --title='Teleop Keyboard Control' --">
+  </node>
+
+</launch>
