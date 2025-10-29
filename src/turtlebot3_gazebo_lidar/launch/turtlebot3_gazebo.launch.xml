@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <!-- Simulation time parameter - set to true when using Gazebo -->
+  <arg name="use_sim_time" default="true" />
+  
+  <!-- World file argument - can be overridden when launching -->
+  <arg name="world" default="$(find-pkg-share turtlebot3_gazebo_lidar)/worlds/turtlebot3_world_maze.world" />
+  
+  <!-- Package and file paths -->
+  <let name="pkg_share" value="$(find-pkg-share turtlebot3_gazebo_lidar)"/>
+  <let name="xacro_file" value="$(var pkg_share)/urdf/turtlebot3_burger.xacro"/>
+  <let name="robot_description" value="$(command 'xacro $(var xacro_file)')"/>
+  <arg name="rviz_config" default="$(find-pkg-share turtlebot3_gazebo_lidar)/config/turtlebot3_config.rviz"/>
+  
+  <!-- Robot State Publisher -->
+  <!-- Publishes the robot's URDF and transforms between coordinate frames -->
+  <node pkg="robot_state_publisher" exec="robot_state_publisher" output="screen">
+    <param name="robot_description" type="str" value="$(var robot_description)"/>
+    <param name="use_sim_time" value="$(var use_sim_time)" />
+  </node>
+  
+  <!-- Gazebo Simulation Setup -->
+  <!-- Set the path where Gazebo looks for models -->
+  <set_env name="GAZEBO_MODEL_PATH" value="$(var pkg_share)" />
+  
+  <!-- Start Gazebo server (physics simulation) -->
+  <executable cmd="gzserver --verbose $(var world) -s libgazebo_ros_init.so -s libgazebo_ros_factory.so" output="screen" />
+  
+  <!-- Start Gazebo client (visualization GUI) -->
+  <executable cmd="gzclient" output="screen" />
+  
+  <!-- Spawn Robot in Gazebo -->
+  <!-- Waits 5 seconds for Gazebo to fully start before spawning the robot -->
+  <node pkg="gazebo_ros" exec="spawn_entity.py" output="screen"
+        args="-topic robot_description -entity turtle_bot"
+        launch-prefix="bash -c 'sleep 5; $0 $@' ">
+    <param name="use_sim_time" value="$(var use_sim_time)" />
+  </node>
+  
+  <!-- RViz2 Visualization -->
+  <!-- Provides 3D visualization of the robot, sensor data, and transforms -->
+  <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen"
+  args="-d $(var rviz_config)">
+    <param name="use_sim_time" value="$(var use_sim_time)" />
+  </node>
+
+</launch>
