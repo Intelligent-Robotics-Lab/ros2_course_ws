@@ -10,6 +10,8 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(turtlesim REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -42,7 +44,10 @@ target_link_libraries(turtle_distance PUBLIC rclcpp::rclcpp ${std_msgs_TARGETS} 
 add_executable(namespaces src/namespaces.cpp)
 target_link_libraries(namespaces PUBLIC rclcpp::rclcpp ${std_msgs_TARGETS})
 
-install(TARGETS topic_publisher service_advertiser service_client turtle_timer turtle_subpub turtle_speed turtle_distance namespaces DESTINATION lib/${PROJECT_NAME})
+add_executable(turtle_tf_broadcaster src/turtle_tf_broadcaster.cpp)
+ament_target_dependencies( turtle_tf_broadcaster rclcpp geometry_msgs turtlesim tf2 tf2_ros)
+
+install(TARGETS topic_publisher service_advertiser service_client turtle_timer turtle_subpub turtle_speed turtle_distance namespaces turtle_tf_broadcaster DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}/)
 
