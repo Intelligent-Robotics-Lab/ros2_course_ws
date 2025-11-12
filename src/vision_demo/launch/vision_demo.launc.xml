@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <!-- Simulation time parameter - set to true when using Gazebo -->
+  <arg name="use_sim_time" default="true" />
+  
+  <!-- Package and file paths -->
+  <let name="pkg_share" value="$(find-pkg-share vision_demo)"/>
+  <let name="xacro_file" value="$(var pkg_share)/urdf/turtlebot3_burger.xacro"/>
+  <let name="robot_description" value="$(command 'xacro $(var xacro_file)')"/>
+
+  <arg name="world" default="$(find-pkg-share vision_demo)/worlds/aruco_demo_world.world" />
+
+  <!-- Robot State Publisher -->
+  <!-- Publishes the robot's URDF and transforms between coordinate frames -->
+  <node pkg="robot_state_publisher" exec="robot_state_publisher" output="screen">
+    <param name="robot_description" type="str" value="$(var robot_description)"/>
+    <param name="use_sim_time" value="$(var use_sim_time)" />
+  </node>
+
+  <!-- <set_env name="GAZEBO_MODEL_PATH"
+         value="$(var pkg_share)/models:$(env GAZEBO_MODEL_PATH)" /> -->
+  <set_env name="GAZEBO_RESOURCE_PATH"
+         value="$(var pkg_share):$(env GAZEBO_RESOURCE_PATH)" />
+
+   <!-- Start Gazebo server (physics simulation) -->
+  <executable cmd="gzserver --verbose $(var world) -s libgazebo_ros_init.so -s libgazebo_ros_factory.so" output="screen" />
+  
+  <!-- Start Gazebo client (visualization GUI) -->
+  <executable cmd="gzclient" output="screen" />
+
+  <!-- Spawn Robot in Gazebo -->
+  <!-- Waits 5 seconds for Gazebo to fully start before spawning the robot -->
+  <node pkg="gazebo_ros" exec="spawn_entity.py" output="screen"
+        args="-topic robot_description -entity turtle_bot"
+        launch-prefix="bash -c 'sleep 5; $0 $@' ">
+    <param name="use_sim_time" value="$(var use_sim_time)" />
+  </node>
+
+  <node pkg="teleop_twist_keyboard" exec="teleop_twist_keyboard" name="teleop_twist_keyboard" output="screen" 
+        launch-prefix="gnome-terminal --title='Teleop Keyboard Control' --">
+  </node>
+
+  <node pkg="vision_demo" exec="simple_aruco_detector_node" name="simple_aruco_detector_node" output="screen"
+        launch-prefix="gnome-terminal --title='ArUco Detector Output' --geometry=120x30 -- bash -c 'sleep 6; source /opt/ros/humble/setup.bash; source ~/ros2_course_ws_master/install/setup.bash; ros2 run vision_demo aruco_detector_node --ros-args -p use_sim_time:=true -p show_debug_image:=true -p camera_topic:=/camera/image_raw -p camera_info_topic:=/camera/camera_info; exec bash'">
+  </node>
+  
+</launch>
+  
