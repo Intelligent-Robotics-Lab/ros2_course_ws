@@ -1,0 +1,7 @@
+<launch>
+
+  <include file="$(find-pkg-share turtlebot3_gazebo)/launch/turtlebot3_world.launch.py"/>
+  <node pkg="path_planning" exec="initial_pose_publisher" name="initial_pose_publisher"/>
+  <node pkg="path_planning" exec="goal_pose_publisher" name="goal_pose_publisher"/>
+
+</launch>
