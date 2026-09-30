@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target topic_publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/topic_publisher.dir/src/topic_publisher.cpp.o[0m
+[01m[K/home/geoff/ros2_course_ws/src/example_package/src/topic_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/geoff/ros2_course_ws/src/example_package/src/topic_publisher.cpp:12:95:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_subscription(const char [9], int, void (&)(std_msgs::msg::String_<std::allocator<void> >::SharedPtr))[m[K’
+   12 |   rclcpp::Subscription<std_msgs::msg::String>::SharedPtr string_in = [01;31m[Knode->create_subscription("topic_in",1,stringCallback)[m[K;
+      |                                                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/geoff/ros2_course_ws/src/example_package/src/topic_publisher.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/geoff/ros2_course_ws/src/example_package/src/topic_publisher.cpp:12:95:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KMessageT[m[K’
+   12 |   rclcpp::Subscription<std_msgs::msg::String>::SharedPtr string_in = [01;36m[Knode->create_subscription("topic_in",1,stringCallback)[m[K;
+      |                                                                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/topic_publisher.dir/build.make:76: CMakeFiles/topic_publisher.dir/src/topic_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/topic_publisher.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

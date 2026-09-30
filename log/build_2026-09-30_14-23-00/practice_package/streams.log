@@ -1,0 +1,20 @@
+[0.007s] Invoking command in '/home/geoff/ros2_course_ws/build/practice_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geoff/turtlebot3_ws/install/turtlebot3_teleop:/home/geoff/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/geoff/ros2_course_ws/build/practice_package -- -j16 -l16
+[0.035s] Invoked command in '/home/geoff/ros2_course_ws/build/practice_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geoff/turtlebot3_ws/install/turtlebot3_teleop:/home/geoff/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/geoff/ros2_course_ws/build/practice_package -- -j16 -l16
+[0.043s] Invoking command in '/home/geoff/ros2_course_ws/build/practice_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geoff/turtlebot3_ws/install/turtlebot3_teleop:/home/geoff/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/geoff/ros2_course_ws/build/practice_package
+[0.049s] -- Install configuration: ""
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/ament_index/resource_index/package_run_dependencies/practice_package
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/ament_index/resource_index/parent_prefix_path/practice_package
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/practice_package/environment/ament_prefix_path.sh
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/practice_package/environment/ament_prefix_path.dsv
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/practice_package/environment/path.sh
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/practice_package/environment/path.dsv
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/practice_package/local_setup.bash
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/practice_package/local_setup.sh
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/practice_package/local_setup.zsh
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/practice_package/local_setup.dsv
+[0.049s] -- Installing: /home/geoff/ros2_course_ws/install/practice_package/share/practice_package/package.dsv
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/ament_index/resource_index/packages/practice_package
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/practice_package/cmake/practice_packageConfig.cmake
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/practice_package/cmake/practice_packageConfig-version.cmake
+[0.049s] -- Up-to-date: /home/geoff/ros2_course_ws/install/practice_package/share/practice_package/package.xml
+[0.051s] Invoked command in '/home/geoff/ros2_course_ws/build/practice_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geoff/turtlebot3_ws/install/turtlebot3_teleop:/home/geoff/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/geoff/ros2_course_ws/build/practice_package

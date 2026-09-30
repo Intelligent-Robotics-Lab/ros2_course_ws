@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target topic_publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/topic_publisher.dir/src/topic_publisher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable topic_publisher[0m
+[100%] Built target topic_publisher
+-- Install configuration: ""
+-- Installing: /home/geoff/ros2_course_ws/install/example_package/lib/example_package/topic_publisher
+-- Set runtime path of "/home/geoff/ros2_course_ws/install/example_package/lib/example_package/topic_publisher" to ""
+-- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/ament_index/resource_index/package_run_dependencies/example_package
+-- Installing: /home/geoff/ros2_course_ws/install/example_package/share/ament_index/resource_index/parent_prefix_path/example_package
+-- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/environment/ament_prefix_path.sh
+-- Installing: /home/geoff/ros2_course_ws/install/example_package/share/example_package/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/environment/path.sh
+-- Installing: /home/geoff/ros2_course_ws/install/example_package/share/example_package/environment/path.dsv
+-- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/local_setup.bash
+-- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/local_setup.sh
+-- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/local_setup.zsh
+-- Installing: /home/geoff/ros2_course_ws/install/example_package/share/example_package/local_setup.dsv
+-- Installing: /home/geoff/ros2_course_ws/install/example_package/share/example_package/package.dsv
+-- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/ament_index/resource_index/packages/example_package
+-- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/example_packageConfig.cmake
+-- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/example_packageConfig-version.cmake
+-- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/package.xml
