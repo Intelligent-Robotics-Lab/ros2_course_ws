@@ -1,0 +1,38 @@
+[  2%] Built target example_package__cpp
+[  5%] Built target example_package__rs
+[ 13%] Built target example_package__rosidl_generator_c
+[ 18%] Built target topic_publisher
+[ 18%] Built target ament_cmake_python_copy_example_package
+[ 26%] Built target example_package__rosidl_typesupport_introspection_c
+[ 34%] Built target example_package__rosidl_typesupport_introspection_cpp
+[ 42%] Built target example_package__rosidl_typesupport_cpp
+[ 50%] Built target example_package__rosidl_typesupport_fastrtps_c
+[ 57%] Built target example_package__rosidl_typesupport_fastrtps_cpp
+[ 65%] Built target example_package__rosidl_typesupport_c
+[35m[1mConsolidate compiler generated dependencies of target service_advertiser[0m
+[35m[1mConsolidate compiler generated dependencies of target service_client[0m
+[ 65%] Built target example_package
+[ 71%] Built target service_advertiser
+[ 73%] [32mBuilding CXX object CMakeFiles/service_client.dir/src/service_client.cpp.o[0m
+[ 76%] Built target example_package__py
+[ 81%] Built target example_package__rosidl_generator_py
+[ 97%] Built target example_package__rosidl_typesupport_c__pyext
+[ 97%] Built target example_package__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target example_package__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing example_package.egg-info/PKG-INFO
+writing dependency_links to example_package.egg-info/dependency_links.txt
+writing top-level names to example_package.egg-info/top_level.txt
+reading manifest file 'example_package.egg-info/SOURCES.txt'
+writing manifest file 'example_package.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_example_package_egg
+[01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:20:48:[m[K [01;31m[Kerror: [m[K‘[01m[KFutureAndRequestID[m[K’ is not a member of ‘[01m[Krclcpp::Client<example_package::srv::Adder>[m[K’
+   20 |   rclcpp::Client<example_package::srv::Adder>::[01;31m[KFutureAndRequestID[m[K response = client->async_send_request(request);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:22:79:[m[K [01;31m[Kerror: [m[K‘[01m[Kresponse[m[K’ was not declared in this scope
+   22 |   rclcpp::FutureReturnCode success = rclcpp::spin_until_future_complete(node, [01;31m[Kresponse[m[K);
+      |                                                                               [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/service_client.dir/build.make:76: CMakeFiles/service_client.dir/src/service_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:669: CMakeFiles/service_client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

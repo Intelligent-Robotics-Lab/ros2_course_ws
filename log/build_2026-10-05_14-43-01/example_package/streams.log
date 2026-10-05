@@ -1,0 +1,153 @@
+[0.011s] Invoking command in '/home/geoff/ros2_course_ws/build/example_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geoff/turtlebot3_ws/install/turtlebot3_teleop:/home/geoff/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/geoff/ros2_course_ws/build/example_package -- -j16 -l16
+[0.052s] [  2%] Built target example_package__rs
+[0.052s] [  5%] Built target example_package__cpp
+[0.052s] [ 13%] Built target example_package__rosidl_generator_c
+[0.059s] [ 18%] Built target topic_publisher
+[0.062s] [ 18%] Built target ament_cmake_python_copy_example_package
+[0.075s] [ 39%] Built target example_package__rosidl_typesupport_introspection_cpp
+[0.075s] [ 42%] Built target example_package__rosidl_typesupport_cpp
+[0.075s] [ 42%] Built target example_package__rosidl_typesupport_fastrtps_c
+[0.076s] [ 50%] Built target example_package__rosidl_typesupport_fastrtps_cpp
+[0.076s] [ 57%] Built target example_package__rosidl_typesupport_c
+[0.078s] [ 65%] Built target example_package__rosidl_typesupport_introspection_c
+[0.086s] [35m[1mConsolidate compiler generated dependencies of target service_client[0m
+[0.094s] [ 65%] Built target example_package
+[0.097s] [ 71%] Built target service_advertiser
+[0.099s] [ 73%] [32mBuilding CXX object CMakeFiles/service_client.dir/src/service_client.cpp.o[0m
+[0.111s] [ 76%] Built target example_package__py
+[0.130s] [ 81%] Built target example_package__rosidl_generator_py
+[0.149s] [ 97%] Built target example_package__rosidl_typesupport_c__pyext
+[0.149s] [ 97%] Built target example_package__rosidl_typesupport_introspection_c__pyext
+[0.149s] [ 97%] Built target example_package__rosidl_typesupport_fastrtps_c__pyext
+[0.274s] running egg_info
+[0.275s] writing example_package.egg-info/PKG-INFO
+[0.275s] writing dependency_links to example_package.egg-info/dependency_links.txt
+[0.275s] writing top-level names to example_package.egg-info/top_level.txt
+[0.277s] reading manifest file 'example_package.egg-info/SOURCES.txt'
+[0.277s] writing manifest file 'example_package.egg-info/SOURCES.txt'
+[0.301s] [ 97%] Built target ament_cmake_python_build_example_package_egg
+[2.033s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.033s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.033s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.033s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.033s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.033s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.033s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.033s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.033s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.033s]                  from [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:3[m[K:
+[2.033s] /opt/ros/humble/include/rclcpp/rclcpp/client.hpp: In instantiation of ‘[01m[Kclass rclcpp::Client<example_package::srv::Adder_Response_<std::allocator<void> > >[m[K’:
+[2.033s] [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:20:57:[m[K   required from here
+[2.033s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:374:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KRequest[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.033s]   374 |   using [01;31m[KRequest[m[K = typename ServiceT::Request;
+[2.033s]       |         [01;31m[K^~~~~~~[m[K
+[2.033s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:375:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.033s]   375 |   using [01;31m[KResponse[m[K = typename ServiceT::Response;
+[2.034s]       |         [01;31m[K^~~~~~~~[m[K
+[2.034s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:377:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KRequest[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.034s]   377 |   using [01;31m[KSharedRequest[m[K = typename ServiceT::Request::SharedPtr;
+[2.034s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[2.034s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:378:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.034s]   378 |   using [01;31m[KSharedResponse[m[K = typename ServiceT::Response::SharedPtr;
+[2.034s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.034s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:380:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.034s]   380 |   using [01;31m[KPromise[m[K = std::promise<SharedResponse>;
+[2.034s]       |         [01;31m[K^~~~~~~[m[K
+[2.034s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:381:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KRequest[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.034s]   381 |   using [01;31m[KPromiseWithRequest[m[K = std::promise<std::pair<SharedRequest, SharedResponse>>;
+[2.034s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.034s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:383:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.034s]   383 |   using [01;31m[KSharedPromise[m[K = std::shared_ptr<Promise>;
+[2.034s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[2.034s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:384:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KRequest[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.034s]   384 |   using [01;31m[KSharedPromiseWithRequest[m[K = std::shared_ptr<PromiseWithRequest>;
+[2.034s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.035s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:386:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.035s]   386 |   using [01;31m[KFuture[m[K = std::future<SharedResponse>;
+[2.035s]       |         [01;31m[K^~~~~~[m[K
+[2.035s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:387:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.035s]   387 |   using [01;31m[KSharedFuture[m[K = std::shared_future<SharedResponse>;
+[2.035s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[2.035s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:388:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KRequest[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.035s]   388 |   using [01;31m[KSharedFutureWithRequest[m[K = std::shared_future<std::pair<SharedRequest, SharedResponse>>;
+[2.035s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.035s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:390:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.035s]   390 |   using [01;31m[KCallbackType[m[K = std::function<void (SharedFuture)>;
+[2.035s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[2.035s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:391:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KRequest[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.035s]   391 |   using [01;31m[KCallbackWithRequestType[m[K = std::function<void (SharedFutureWithRequest)>;
+[2.035s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.035s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:513:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.035s]   513 |   [01;31m[Ktake_response[m[K(typename ServiceT::Response & response_out, rmw_request_id_t & request_header_out)
+[2.035s]       |   [01;31m[K^~~~~~~~~~~~~[m[K
+[2.035s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:643:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.035s]   643 |   [01;31m[Kasync_send_request[m[K(SharedRequest request, CallbackT && cb)
+[2.036s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.036s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:674:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KRequest[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.036s]   674 |   [01;31m[Kasync_send_request[m[K(SharedRequest request, CallbackT && cb)
+[2.036s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.036s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:784:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.036s]   784 |   using [01;31m[KCallbackTypeValueVariant[m[K = std::tuple<CallbackType, SharedFuture, Promise>;
+[2.036s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.036s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:785:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KRequest[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.036s]   785 |   using [01;31m[KCallbackWithRequestTypeValueVariant[m[K = std::tuple<
+[2.036s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.036s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:788:9:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.036s]   788 |   using [01;31m[KCallbackInfoVariant[m[K = std::variant<
+[2.036s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.036s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:809:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.036s]   809 |   [01;31m[Kget_and_erase_pending_request[m[K(int64_t request_number)
+[2.036s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.036s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:831:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.036s]   831 |   [01;31m[Kpending_requests_[m[K;
+[2.036s]       |   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.036s] [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.036s] [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:20:94:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Krclcpp::Client<example_package::srv::Adder>::FutureAndRequestId[m[K’ to non-scalar type ‘[01m[Krclcpp::Client<example_package::srv::Adder_Response_<std::allocator<void> > >[m[K’ requested
+[2.036s]    20 |   rclcpp::Client<example_package::srv::Adder::Response> response = [01;31m[Kclient->async_send_request(request)[m[K;
+[2.037s]       |                                                                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[2.037s] [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:25:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Client<example_package::srv::Adder_Response_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kget[m[K’
+[2.037s]    25 |     printf("Result of add: %f\n", response.[01;31m[Kget[m[K()->results);
+[2.037s]       |                                            [01;31m[K^~~[m[K
+[2.326s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.326s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.326s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.326s]                  from [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:3[m[K:
+[2.326s] /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp: In instantiation of ‘[01m[Krclcpp::FutureReturnCode rclcpp::Executor::spin_until_future_complete(const FutureT&, std::chrono::duration<_Rep, _Period>) [with FutureT = rclcpp::Client<example_package::srv::Adder_Response_<std::allocator<void> > >; TimeRepT = long int; TimeT = std::ratio<1, 1000>][m[K’:
+[2.326s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:80:53:[m[K   required from ‘[01m[Krclcpp::FutureReturnCode rclcpp::executors::spin_node_until_future_complete(rclcpp::Executor&, rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, const FutureT&, std::chrono::duration<_Rep, _Period>) [with FutureT = rclcpp::Client<example_package::srv::Adder_Response_<std::allocator<void> > >; TimeRepT = long int; TimeT = std::ratio<1, 1000>; rclcpp::node_interfaces::NodeBaseInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>][m[K’
+[2.326s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:113:61:[m[K   required from ‘[01m[Krclcpp::FutureReturnCode rclcpp::spin_until_future_complete(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, const FutureT&, std::chrono::duration<_Rep, _Period>) [with FutureT = rclcpp::Client<example_package::srv::Adder_Response_<std::allocator<void> > >; TimeRepT = long int; TimeT = std::ratio<1, 1000>; rclcpp::node_interfaces::NodeBaseInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>][m[K’
+[2.326s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:124:44:[m[K   required from ‘[01m[Krclcpp::FutureReturnCode rclcpp::spin_until_future_complete(std::shared_ptr<_Tp>, const FutureT&, std::chrono::duration<_Rep2, _Period2>) [with NodeT = rclcpp::Node; FutureT = rclcpp::Client<example_package::srv::Adder_Response_<std::allocator<void> > >; TimeRepT = long int; TimeT = std::ratio<1, 1000>][m[K’
+[2.326s] [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:22:72:[m[K   required from here
+[2.326s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:343:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class rclcpp::Client<example_package::srv::Adder_Response_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kwait_for[m[K’
+[2.326s]   343 |     std::future_status status = [01;31m[Kfuture.wait_for[m[K(std::chrono::seconds(0));
+[2.326s]       |                                 [01;31m[K~~~~~~~^~~~~~~~[m[K
+[2.327s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:365:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class rclcpp::Client<example_package::srv::Adder_Response_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kwait_for[m[K’
+[2.327s]   365 |       status = [01;31m[Kfuture.wait_for[m[K(std::chrono::seconds(0));
+[2.327s]       |                [01;31m[K~~~~~~~^~~~~~~~[m[K
+[2.411s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.412s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.412s]                  from [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:3[m[K:
+[2.412s] /opt/ros/humble/include/rclcpp/rclcpp/client.hpp: In instantiation of ‘[01m[Kstd::shared_ptr<void> rclcpp::Client<ServiceT>::create_response() [with ServiceT = example_package::srv::Adder_Response_<std::allocator<void> >][m[K’:
+[2.412s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:523:3:[m[K   required from here
+[2.412s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:525:34:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.412s]   525 |     return std::shared_ptr<void>([01;31m[Knew typename ServiceT::Response()[m[K);
+[2.412s]       |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.412s] /opt/ros/humble/include/rclcpp/rclcpp/client.hpp: In instantiation of ‘[01m[Kvoid rclcpp::Client<ServiceT>::handle_response(std::shared_ptr<rmw_request_id_s>, std::shared_ptr<void>) [with ServiceT = example_package::srv::Adder_Response_<std::allocator<void> >][m[K’:
+[2.412s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:546:3:[m[K   required from here
+[2.412s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:551:5:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.412s]   551 |     [01;31m[Koptional_pending_request[m[K = this->get_and_erase_pending_request(request_header->sequence_number);
+[2.413s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.413s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:551:5:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.413s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:556:32:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[KResponse[m[K’ in ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’
+[2.413s]   556 |     auto typed_response = [01;31m[Kstd::static_pointer_cast<typename ServiceT::Response>[m[K(
+[2.413s]       |                           [01;31m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.513s] gmake[2]: *** [CMakeFiles/service_client.dir/build.make:76: CMakeFiles/service_client.dir/src/service_client.cpp.o] Error 1
+[2.513s] gmake[1]: *** [CMakeFiles/Makefile2:669: CMakeFiles/service_client.dir/all] Error 2
+[2.513s] gmake: *** [Makefile:146: all] Error 2
+[2.515s] Invoked command in '/home/geoff/ros2_course_ws/build/example_package' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geoff/turtlebot3_ws/install/turtlebot3_teleop:/home/geoff/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/geoff/ros2_course_ws/build/example_package -- -j16 -l16

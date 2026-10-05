@@ -1,0 +1,29 @@
+[  5%] Built target example_package__rs
+[  5%] Built target example_package__cpp
+[ 13%] Built target example_package__rosidl_generator_c
+[ 18%] Built target topic_publisher
+[ 18%] Built target ament_cmake_python_copy_example_package
+[ 26%] Built target example_package__rosidl_typesupport_cpp
+[ 34%] Built target example_package__rosidl_typesupport_introspection_cpp
+[ 42%] Built target example_package__rosidl_typesupport_fastrtps_cpp
+[ 50%] Built target example_package__rosidl_typesupport_c
+[ 57%] Built target example_package__rosidl_typesupport_introspection_c
+[ 65%] Built target example_package__rosidl_typesupport_fastrtps_c
+[35m[1mConsolidate compiler generated dependencies of target service_client[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/service_advertiser.dir/src/service_advertiser.cpp.o[0m
+[ 68%] Built target example_package
+[ 71%] [32mBuilding CXX object CMakeFiles/service_client.dir/src/service_client.cpp.o[0m
+[ 73%] Built target example_package__py
+[ 78%] Built target example_package__rosidl_generator_py
+[ 94%] Built target example_package__rosidl_typesupport_c__pyext
+[ 94%] Built target example_package__rosidl_typesupport_introspection_c__pyext
+[ 94%] Built target example_package__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing example_package.egg-info/PKG-INFO
+writing dependency_links to example_package.egg-info/dependency_links.txt
+writing top-level names to example_package.egg-info/top_level.txt
+reading manifest file 'example_package.egg-info/SOURCES.txt'
+writing manifest file 'example_package.egg-info/SOURCES.txt'
+[ 94%] Built target ament_cmake_python_build_example_package_egg
+[ 97%] [32m[1mLinking CXX executable service_advertiser[0m
+[ 97%] Built target service_advertiser

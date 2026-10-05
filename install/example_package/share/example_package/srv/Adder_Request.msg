@@ -1,0 +1,2 @@
+float64 value1
+float64 value2

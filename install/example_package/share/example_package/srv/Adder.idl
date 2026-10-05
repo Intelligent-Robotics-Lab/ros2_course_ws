@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from example_package/srv/Adder.srv
+// generated code does not contain a copyright notice
+
+
+module example_package {
+  module srv {
+    struct Adder_Request {
+      double value1;
+
+      double value2;
+    };
+    struct Adder_Response {
+      double result;
+    };
+  };
+};

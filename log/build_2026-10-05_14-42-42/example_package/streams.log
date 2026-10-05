@@ -1,0 +1,62 @@
+[0.011s] Invoking command in '/home/geoff/ros2_course_ws/build/example_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geoff/turtlebot3_ws/install/turtlebot3_teleop:/home/geoff/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/geoff/ros2_course_ws/build/example_package -- -j16 -l16
+[0.054s] [  2%] Built target example_package__rs
+[0.054s] [  5%] Built target example_package__cpp
+[0.054s] [ 13%] Built target example_package__rosidl_generator_c
+[0.058s] [ 18%] Built target topic_publisher
+[0.061s] [ 18%] Built target ament_cmake_python_copy_example_package
+[0.074s] [ 26%] Built target example_package__rosidl_typesupport_cpp
+[0.074s] [ 34%] Built target example_package__rosidl_typesupport_introspection_cpp
+[0.074s] [ 42%] Built target example_package__rosidl_typesupport_fastrtps_cpp
+[0.078s] [ 50%] Built target example_package__rosidl_typesupport_c
+[0.078s] [ 57%] Built target example_package__rosidl_typesupport_introspection_c
+[0.079s] [ 65%] Built target example_package__rosidl_typesupport_fastrtps_c
+[0.084s] [35m[1mConsolidate compiler generated dependencies of target service_client[0m
+[0.096s] [ 71%] Built target service_advertiser
+[0.097s] [ 71%] Built target example_package
+[0.098s] [ 73%] [32mBuilding CXX object CMakeFiles/service_client.dir/src/service_client.cpp.o[0m
+[0.115s] [ 76%] Built target example_package__py
+[0.135s] [ 81%] Built target example_package__rosidl_generator_py
+[0.155s] [ 97%] Built target example_package__rosidl_typesupport_fastrtps_c__pyext
+[0.155s] [ 97%] Built target example_package__rosidl_typesupport_introspection_c__pyext
+[0.155s] [ 97%] Built target example_package__rosidl_typesupport_c__pyext
+[0.282s] running egg_info
+[0.282s] writing example_package.egg-info/PKG-INFO
+[0.283s] writing dependency_links to example_package.egg-info/dependency_links.txt
+[0.283s] writing top-level names to example_package.egg-info/top_level.txt
+[0.285s] reading manifest file 'example_package.egg-info/SOURCES.txt'
+[0.285s] writing manifest file 'example_package.egg-info/SOURCES.txt'
+[0.310s] [ 97%] Built target ament_cmake_python_build_example_package_egg
+[2.076s] [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.076s] [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:20:47:[m[K [01;31m[Kerror: [m[K‘[01m[KFutureAndRequestID[m[K’ is not a member of ‘[01m[Kexample_package::srv::Adder[m[K’
+[2.076s]    20 |   rclcpp::Client<example_package::srv::Adder::[01;31m[KFutureAndRequestID[m[K> response = client->async_send_request(request);
+[2.076s]       |                                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.076s] [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:20:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.076s]    20 |   rclcpp::Client<example_package::srv::Adder::FutureAndRequestID[01;31m[K>[m[K response = client->async_send_request(request);
+[2.076s]       |                                                                 [01;31m[K^[m[K
+[2.077s] [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:20:104:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Client<example_package::srv::Adder>::FutureAndRequestId[m[K’ to ‘[01m[Kint[m[K’ in initialization
+[2.077s]    20 |   rclcpp::Client<example_package::srv::Adder::FutureAndRequestID> response = [01;31m[Kclient->async_send_request(request)[m[K;
+[2.077s]       |                                                                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[2.077s]       |                                                                                                        [01;31m[K|[m[K
+[2.077s]       |                                                                                                        [01;31m[Krclcpp::Client<example_package::srv::Adder>::FutureAndRequestId[m[K
+[2.078s] [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:25:44:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget[m[K’ in ‘[01m[Kresponse[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.078s]    25 |     printf("Result of add: %f\n", response.[01;31m[Kget[m[K()->results);
+[2.078s]       |                                            [01;31m[K^~~[m[K
+[2.374s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.374s]                  from [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:3[m[K:
+[2.374s] /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp: In instantiation of ‘[01m[Krclcpp::FutureReturnCode rclcpp::Executor::spin_until_future_complete(const FutureT&, std::chrono::duration<_Rep, _Period>) [with FutureT = int; TimeRepT = long int; TimeT = std::ratio<1, 1000>][m[K’:
+[2.374s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:80:53:[m[K   required from ‘[01m[Krclcpp::FutureReturnCode rclcpp::executors::spin_node_until_future_complete(rclcpp::Executor&, rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, const FutureT&, std::chrono::duration<_Rep, _Period>) [with FutureT = int; TimeRepT = long int; TimeT = std::ratio<1, 1000>; rclcpp::node_interfaces::NodeBaseInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>][m[K’
+[2.374s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:113:61:[m[K   required from ‘[01m[Krclcpp::FutureReturnCode rclcpp::spin_until_future_complete(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, const FutureT&, std::chrono::duration<_Rep, _Period>) [with FutureT = int; TimeRepT = long int; TimeT = std::ratio<1, 1000>; rclcpp::node_interfaces::NodeBaseInterface::SharedPtr = std::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>][m[K’
+[2.374s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:124:44:[m[K   required from ‘[01m[Krclcpp::FutureReturnCode rclcpp::spin_until_future_complete(std::shared_ptr<_Tp>, const FutureT&, std::chrono::duration<_Rep2, _Period2>) [with NodeT = rclcpp::Node; FutureT = int; TimeRepT = long int; TimeT = std::ratio<1, 1000>][m[K’
+[2.374s] [01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:22:72:[m[K   required from here
+[2.374s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:343:40:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kwait_for[m[K’ in ‘[01m[Kfuture[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[2.374s]   343 |     std::future_status status = [01;31m[Kfuture.wait_for[m[K(std::chrono::seconds(0));
+[2.375s]       |                                 [01;31m[K~~~~~~~^~~~~~~~[m[K
+[2.375s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:365:23:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kwait_for[m[K’ in ‘[01m[Kfuture[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[2.375s]   365 |       status = [01;31m[Kfuture.wait_for[m[K(std::chrono::seconds(0));
+[2.375s]       |                [01;31m[K~~~~~~~^~~~~~~~[m[K
+[2.569s] gmake[2]: *** [CMakeFiles/service_client.dir/build.make:76: CMakeFiles/service_client.dir/src/service_client.cpp.o] Error 1
+[2.569s] gmake[1]: *** [CMakeFiles/Makefile2:669: CMakeFiles/service_client.dir/all] Error 2
+[2.569s] gmake: *** [Makefile:146: all] Error 2
+[2.572s] Invoked command in '/home/geoff/ros2_course_ws/build/example_package' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geoff/turtlebot3_ws/install/turtlebot3_teleop:/home/geoff/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/geoff/ros2_course_ws/build/example_package -- -j16 -l16

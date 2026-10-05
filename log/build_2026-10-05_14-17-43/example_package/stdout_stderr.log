@@ -1,0 +1,43 @@
+[  2%] Built target example_package__rs
+[  5%] Built target example_package__cpp
+[ 13%] Built target example_package__rosidl_generator_c
+[ 19%] Built target topic_publisher
+[ 19%] Built target ament_cmake_python_copy_example_package
+[ 27%] Built target example_package__rosidl_typesupport_cpp
+[ 36%] Built target example_package__rosidl_typesupport_introspection_cpp
+[ 44%] Built target example_package__rosidl_typesupport_fastrtps_c
+[ 58%] Built target example_package__rosidl_typesupport_c
+[ 61%] Built target example_package__rosidl_typesupport_fastrtps_cpp
+[ 69%] Built target example_package__rosidl_typesupport_introspection_c
+[35m[1mConsolidate compiler generated dependencies of target service_advertiser[0m
+[ 69%] Built target example_package
+[ 72%] [32mBuilding CXX object CMakeFiles/service_advertiser.dir/src/service_advertiser.cpp.o[0m
+[ 75%] Built target example_package__py
+[ 80%] Built target example_package__rosidl_generator_py
+[ 97%] Built target example_package__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] Built target example_package__rosidl_typesupport_c__pyext
+[ 97%] Built target example_package__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing example_package.egg-info/PKG-INFO
+writing dependency_links to example_package.egg-info/dependency_links.txt
+writing top-level names to example_package.egg-info/top_level.txt
+reading manifest file 'example_package.egg-info/SOURCES.txt'
+writing manifest file 'example_package.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_example_package_egg
+[01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_advertiser.cpp:6:45:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+    6 |   const std::shared_ptr<example_package::srv[01;31m[K:[m[KAdder::Request> req,
+      |                                             [01;31m[K^[m[K
+      |                                             [32m[K::[m[K
+[01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_advertiser.cpp:22:45:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+   22 |   const std::shared_ptr<example_package::srv[01;31m[K:[m[KAdder::Request> req,
+      |                                             [01;31m[K^[m[K
+      |                                             [32m[K::[m[K
+[01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_advertiser.cpp:21:6:[m[K [01;31m[Kerror: [m[Kambiguating new declaration of ‘[01m[Kvoid srvCallback(std::shared_ptr<example_package::srv::Adder_Request_<std::allocator<void> > >, std::shared_ptr<example_package::srv::Adder_Response_<std::allocator<void> > >)[m[K’
+   21 | void [01;31m[KsrvCallback[m[K(
+      |      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_advertiser.cpp:5:6:[m[K [01;36m[Knote: [m[Kold declaration ‘[01m[Kbool srvCallback(std::shared_ptr<example_package::srv::Adder_Request_<std::allocator<void> > >, std::shared_ptr<example_package::srv::Adder_Response_<std::allocator<void> > >)[m[K’
+    5 | bool [01;36m[KsrvCallback[m[K(
+      |      [01;36m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/service_advertiser.dir/build.make:76: CMakeFiles/service_advertiser.dir/src/service_advertiser.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:640: CMakeFiles/service_advertiser.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

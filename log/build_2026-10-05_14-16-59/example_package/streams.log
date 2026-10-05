@@ -1,0 +1,163 @@
+[0.009s] Invoking command in '/home/geoff/ros2_course_ws/build/example_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geoff/turtlebot3_ws/install/turtlebot3_teleop:/home/geoff/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/geoff/ros2_course_ws/build/example_package -- -j16 -l16
+[0.050s] [  2%] Built target example_package__rs
+[0.050s] [  5%] Built target example_package__cpp
+[0.050s] [ 14%] Built target example_package__rosidl_generator_c
+[0.054s] [ 20%] Built target topic_publisher
+[0.059s] [ 20%] Built target ament_cmake_python_copy_example_package
+[0.072s] [ 29%] Built target example_package__rosidl_typesupport_introspection_cpp
+[0.073s] [ 38%] Built target example_package__rosidl_typesupport_fastrtps_cpp
+[0.073s] [ 47%] Built target example_package__rosidl_typesupport_cpp
+[0.075s] [ 58%] Built target example_package__rosidl_typesupport_introspection_c
+[0.075s] [ 64%] Built target example_package__rosidl_typesupport_c
+[0.077s] [ 73%] Built target example_package__rosidl_typesupport_fastrtps_c
+[0.092s] [ 73%] Built target example_package
+[0.108s] [ 76%] Built target example_package__py
+[0.125s] [ 82%] Built target example_package__rosidl_generator_py
+[0.143s] [100%] Built target example_package__rosidl_typesupport_c__pyext
+[0.143s] [100%] Built target example_package__rosidl_typesupport_fastrtps_c__pyext
+[0.143s] [100%] Built target example_package__rosidl_typesupport_introspection_c__pyext
+[0.254s] running egg_info
+[0.254s] writing example_package.egg-info/PKG-INFO
+[0.254s] writing dependency_links to example_package.egg-info/dependency_links.txt
+[0.254s] writing top-level names to example_package.egg-info/top_level.txt
+[0.256s] reading manifest file 'example_package.egg-info/SOURCES.txt'
+[0.257s] writing manifest file 'example_package.egg-info/SOURCES.txt'
+[0.280s] [100%] Built target ament_cmake_python_build_example_package_egg
+[0.289s] Invoked command in '/home/geoff/ros2_course_ws/build/example_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geoff/turtlebot3_ws/install/turtlebot3_teleop:/home/geoff/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/geoff/ros2_course_ws/build/example_package -- -j16 -l16
+[0.290s] Invoking command in '/home/geoff/ros2_course_ws/build/example_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geoff/turtlebot3_ws/install/turtlebot3_teleop:/home/geoff/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/geoff/ros2_course_ws/build/example_package
+[0.296s] -- Install configuration: ""
+[0.296s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/ament_index/resource_index/rosidl_interfaces/example_package
+[0.296s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package
+[0.296s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/msg
+[0.296s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/msg/rosidl_generator_c__visibility_control.h
+[0.296s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv
+[0.297s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail
+[0.297s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__functions.c
+[0.297s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__functions.h
+[0.297s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__struct.h
+[0.297s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__type_support.h
+[0.297s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/adder.h
+[0.297s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/environment/library_path.sh
+[0.297s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/environment/library_path.dsv
+[0.297s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/lib/libexample_package__rosidl_generator_c.so
+[0.297s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package
+[0.297s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/msg
+[0.297s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__rosidl_typesupport_fastrtps_c.h
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/lib/libexample_package__rosidl_typesupport_fastrtps_c.so
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/msg
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__builder.hpp
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__traits.hpp
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__struct.hpp
+[0.298s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__type_support.hpp
+[0.299s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/adder.hpp
+[0.299s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package
+[0.299s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/msg
+[0.299s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.299s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv
+[0.299s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail
+[0.299s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/dds_fastrtps
+[0.299s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__rosidl_typesupport_fastrtps_cpp.hpp
+[0.299s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/lib/libexample_package__rosidl_typesupport_fastrtps_cpp.so
+[0.299s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package
+[0.299s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/msg
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__rosidl_typesupport_introspection_c.h
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__type_support.c
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/lib/libexample_package__rosidl_typesupport_introspection_c.so
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/lib/libexample_package__rosidl_typesupport_c.so
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__rosidl_typesupport_introspection_cpp.hpp
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/include/example_package/example_package/srv/detail/adder__type_support.cpp
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/lib/libexample_package__rosidl_typesupport_introspection_cpp.so
+[0.300s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/lib/libexample_package__rosidl_typesupport_cpp.so
+[0.301s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/environment/pythonpath.sh
+[0.301s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/environment/pythonpath.dsv
+[0.301s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package-0.0.0-py3.10.egg-info
+[0.301s] -- Installing: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package-0.0.0-py3.10.egg-info/PKG-INFO
+[0.301s] -- Installing: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.301s] -- Installing: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package-0.0.0-py3.10.egg-info/top_level.txt
+[0.301s] -- Installing: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.301s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package
+[0.301s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/__init__.py
+[0.301s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/srv
+[0.301s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/srv/__init__.py
+[0.301s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/srv/_adder_s.c
+[0.301s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/srv/_adder.py
+[0.301s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/_example_package_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.301s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/example_package_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.302s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/example_package_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.302s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/_example_package_s.ep.rosidl_typesupport_c.c
+[0.302s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/_example_package_s.ep.rosidl_typesupport_introspection_c.c
+[0.302s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/libexample_package__rosidl_generator_py.so
+[0.302s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/example_package_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.326s] Listing '/home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package'...
+[0.326s] Listing '/home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/srv'...
+[0.329s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/example_package_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.330s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/example_package_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.330s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/local/lib/python3.10/dist-packages/example_package/example_package_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.330s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/lib/libexample_package__rosidl_generator_py.so
+[0.330s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/rust
+[0.330s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/rust/build.rs
+[0.330s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/rust/src
+[0.330s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/rust/src/lib.rs
+[0.330s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/rust/src/srv
+[0.330s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/rust/src/srv/rmw.rs
+[0.330s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/rust/src/srv.rs
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/rust/Cargo.toml
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/srv/Adder.idl
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/srv/Adder.srv
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/srv/Adder_Request.msg
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/srv/Adder_Response.msg
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/lib/example_package/topic_publisher
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/ament_index/resource_index/package_run_dependencies/example_package
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/ament_index/resource_index/parent_prefix_path/example_package
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/environment/ament_prefix_path.sh
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/environment/ament_prefix_path.dsv
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/environment/path.sh
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/environment/path.dsv
+[0.331s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/local_setup.bash
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/local_setup.sh
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/local_setup.zsh
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/local_setup.dsv
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/package.dsv
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/ament_index/resource_index/packages/example_package
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/export_example_package__rosidl_generator_cExport.cmake
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/export_example_package__rosidl_generator_cExport-noconfig.cmake
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/export_example_package__rosidl_typesupport_fastrtps_cExport.cmake
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/export_example_package__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/export_example_package__rosidl_generator_cppExport.cmake
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/export_example_package__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/export_example_package__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.332s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/example_package__rosidl_typesupport_introspection_cExport.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/example_package__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/example_package__rosidl_typesupport_cExport.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/example_package__rosidl_typesupport_cExport-noconfig.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/example_package__rosidl_typesupport_introspection_cppExport.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/example_package__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/example_package__rosidl_typesupport_cppExport.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/example_package__rosidl_typesupport_cppExport-noconfig.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/export_example_package__rosidl_generator_pyExport.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/export_example_package__rosidl_generator_pyExport-noconfig.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/rosidl_cmake-extras.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/ament_cmake_export_libraries-extras.cmake
+[0.333s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/ament_cmake_export_targets-extras.cmake
+[0.334s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.334s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.334s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.334s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[0.334s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/example_packageConfig.cmake
+[0.334s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/cmake/example_packageConfig-version.cmake
+[0.334s] -- Up-to-date: /home/geoff/ros2_course_ws/install/example_package/share/example_package/package.xml
+[0.335s] Invoked command in '/home/geoff/ros2_course_ws/build/example_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/geoff/turtlebot3_ws/install/turtlebot3_teleop:/home/geoff/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/geoff/ros2_course_ws/build/example_package

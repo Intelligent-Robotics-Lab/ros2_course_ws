@@ -9,6 +9,18 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "srv/Adder.srv"
+)
+
+rosidl_get_typesupport_target(cpp_typesupport_target 
+  ${PROJECT_NAME} rosidl_typesupport_cpp
+)
+
+ament_export_dependencies(rosidl_default_runtime)
+
 
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -26,9 +38,19 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+#Setting up topic publisher executable
 add_executable(topic_publisher src/topic_publisher.cpp)
 target_link_libraries(topic_publisher PUBLIC rclcpp::rclcpp ${std_msgs_TARGETS})
-
 install(TARGETS topic_publisher DESTINATION lib/${PROJECT_NAME})
+
+#Setting up service advertiser executable
+add_executable(service_advertiser src/service_advertiser.cpp)
+target_link_libraries(service_advertiser PUBLIC rclcpp::rclcpp ${std_msgs_TARGETS} "${cpp_typesupport_target}")
+install(TARGETS service_advertiser DESTINATION lib/${PROJECT_NAME})
+
+#Setting up service client executable
+add_executable(service_client src/service_client.cpp)
+target_link_libraries(service_client PUBLIC rclcpp::rclcpp ${std_msgs_TARGETS} "${cpp_typesupport_target}")
+install(TARGETS service_client DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
