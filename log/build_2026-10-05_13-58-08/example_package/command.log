@@ -1,2 +1,0 @@
-Invoking command in '/home/geoff/ros2_course_ws/build/example_package': /usr/bin/cmake --build /home/geoff/ros2_course_ws/build/example_package -- -j16 -l16
-Invoked command in '/home/geoff/ros2_course_ws/build/example_package' returned '2': /usr/bin/cmake --build /home/geoff/ros2_course_ws/build/example_package -- -j16 -l16

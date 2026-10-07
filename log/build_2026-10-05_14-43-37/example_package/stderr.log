@@ -1,8 +1,0 @@
-[01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/geoff/ros2_course_ws/src/example_package/src/service_client.cpp:25:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct example_package::srv::Adder_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kresults[m[K’; did you mean ‘[01m[Kresult[m[K’?
-   25 |     printf("Result of add: %f\n", response.get()->[01;31m[Kresults[m[K);
-      |                                                   [01;31m[K^~~~~~~[m[K
-      |                                                   [32m[Kresult[m[K
-gmake[2]: *** [CMakeFiles/service_client.dir/build.make:76: CMakeFiles/service_client.dir/src/service_client.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:669: CMakeFiles/service_client.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

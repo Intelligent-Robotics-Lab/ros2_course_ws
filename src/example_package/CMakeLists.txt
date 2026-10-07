@@ -8,6 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(example_interfaces REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
@@ -52,5 +53,11 @@ install(TARGETS service_advertiser DESTINATION lib/${PROJECT_NAME})
 add_executable(service_client src/service_client.cpp)
 target_link_libraries(service_client PUBLIC rclcpp::rclcpp ${std_msgs_TARGETS} "${cpp_typesupport_target}")
 install(TARGETS service_client DESTINATION lib/${PROJECT_NAME})
+
+#Setting up timer example executable
+add_executable(timer_example src/timer_example.cpp)
+target_link_libraries(timer_example PUBLIC rclcpp::rclcpp ${std_msgs_TARGETS} ${example_interfaces_TARGETS} "${cpp_typesupport_target}")
+install(TARGETS timer_example DESTINATION lib/${PROJECT_NAME})
+install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}/)
 
 ament_package()
