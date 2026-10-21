@@ -1,4 +1,0 @@
-srv/Adder.idl
-srv/Adder.srv
-srv/Adder_Request.msg
-srv/Adder_Response.msg
