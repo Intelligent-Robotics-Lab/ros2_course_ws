@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <let name="pkg_share" value="$(find-pkg-share my_robot_description)"/>
+
+  <let name="xacro_file" value="$(var pkg_share)/urdf/my_robot.urdf.xacro"/>
+
+  <let name="robot_description" value="$(command 'xacro $(var xacro_file)')"/>
+
+  <!-- Joint State Publisher GUI -->
+  <node pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui" 
+  name="joint_state_publisher_gui" output="screen"/>
+
+  <node pkg="robot_state_publisher" exec="robot_state_publisher" output="screen">
+    <param name="robot_description" type="str" value="$(var robot_description)"/>
+  </node>
+
+  <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen">
+  </node>
+</launch>
